@@ -16,6 +16,6 @@ class IndexController {
     }
     @GetMapping
     public ModelAndView index() {
-        return new ModelAndView("index", "namen", service.findNamen());
+        return new ModelAndView("index", "landen", service.findAll());
     }
 }

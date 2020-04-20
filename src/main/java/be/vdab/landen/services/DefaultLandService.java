@@ -1,5 +1,6 @@
 package be.vdab.landen.services;
 
+import be.vdab.landen.model.Land;
 import be.vdab.landen.repositories.LandRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,7 +18,7 @@ class DefaultLandService implements LandService {
 
 
     @Override
-    public List<String> findNamen() {
-        return repository.findNamen();
+    public List<Land> findAll() {
+        return repository.findAll();
     }
 }
